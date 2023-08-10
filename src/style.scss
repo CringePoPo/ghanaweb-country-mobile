@@ -1,0 +1,219 @@
+$deepBrown :#9e7241;
+$lightBrown:#c7ab8c;
+
+// Helpers
+.background-content-name , .background-content-language{
+    span{
+        font-size: 15px;
+
+    }
+}
+
+.country-name{
+    text-align: center;
+    font-size: 20px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: $lightBrown;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 30px;
+}
+// Ghana banner
+.ghana-name{
+    display: none;
+    position: relative;
+
+    p{
+        font-size: 18px;
+        margin: 0;
+        font-weight: 700;
+    }
+    &:after{
+        content: '';
+        background-image: url(../img/ghana-flag.png);
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    bottom: -388px;
+    transform: translate(-50%, 0%);
+    }
+}
+.background-info-ghana{
+    margin: 15px 0;
+ 
+    .background-content-wrapper{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .background-content{
+        border: 1px solid $lightBrown;
+        padding: 25px 15px;
+        border-radius: 30px;
+    &-name{
+        span{
+            a{
+                color: $lightBrown !important;
+            }
+        }
+    }
+    &-language{
+        span{
+            a{
+                color: $lightBrown !important;
+            }
+        }
+    }
+    }
+}
+// Bg info title 
+.background-info-title{
+    color: $lightBrown;
+    width: 290px;
+    border-radius: 100px;
+    margin-bottom: 15px;
+    border: 1px solid $lightBrown;
+    // display: flex;
+    position: relative;
+    h2{
+        text-align: right;
+        font-weight: 400;
+        margin: 5px 15px 5px 0 !important;
+    }
+    .info-title-svg{
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+position: absolute;
+left: -5px;
+top: -10px;
+display: grid;
+place-items: center;
+
+        .img-container{
+            width: 40px;
+            height: 40px;
+            background-color: $deepBrown;
+            display: grid;
+            border-radius: 100px;
+            place-items: center;
+            img{
+                margin: 0 !important;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+// Summary 
+.ghana-summary{
+    .background-info-title{
+
+        width: 160px;
+        
+    }
+    p{
+        font-size: 15px;
+        a{
+            color: $lightBrown !important;
+        }
+    }
+}
+// More info GHana
+.more-info-ghana{
+    margin-top: 15px;
+
+    .background-info-title{
+        width: 220px;
+    }
+    .more-info-content{
+        p{
+            font-size: 15px;
+            a{
+                color: $lightBrown !important;
+            }
+        }
+    }
+}
+
+.info-display{
+    margin-top: 15px ;
+    border-radius: 20px;
+    border: 1px solid $lightBrown;
+    display: flex;
+    overflow: hidden;
+   
+    &-content{
+        padding: 10px 15px;
+        p{
+            font-size: 15px;
+            a{
+                color: $lightBrown !important;
+            }
+        }
+       
+    }
+}
+
+.home-demo{
+   position: relative; 
+   margin-bottom: 15px;
+   .pop-over{
+    display: none;
+    position: absolute;
+    z-index: 200;
+    top: 190px;
+    background-color: $deepBrown;
+    border-radius: 0 100px 100px 0;
+    padding: 5px 30px;
+    // animation-name: fadeIn ;
+    // animation-duration:  1s ;
+    // animation-timing-function: ease-in;
+    p{
+        font-size: 18px;
+        margin: 0;
+        color: #fff;
+    }
+}
+.owl-stage{
+    position: relative;
+}
+    .item {
+        background: #E8E0D9;
+        height: 370px;
+        position: relative;
+        z-index: 190;
+        border-radius: 10px;
+        overflow: hidden;
+        .do-you-know-img{
+            img{
+                height: 230px;
+                object-fit: cover;
+            }
+        }
+        
+        .do-you-know-content{
+            padding: 0 15px;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+} 
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
